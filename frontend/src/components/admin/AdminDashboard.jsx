@@ -111,7 +111,7 @@ export default function AdminDashboard() {
                                         </div>
                                     </td>
                                     <td>
-                                        <Form onSubmit={(e) => { e.preventDefault(); updateStatus(eachItem._id)}}>
+                                        <Form onSubmit={(e) => { e.preventDefault(); updateStatus(eachItem._id) }}>
                                             <Form.Row>
                                                 <Form.Group as={Col} controlId="formGridCity">
                                                     <Form.Label>Meter Reading</Form.Label>
