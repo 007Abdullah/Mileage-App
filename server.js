@@ -54,16 +54,16 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://milage.herokuapp.com'],
+    origin: ['http://localhost:3000', 'https://mileage-apps.herokuapp.com'],
     credentials: true
 }));
 
 app.use(morgan('dev'));
 
-app.use('/auth', authRoutes);
 
 app.use("/", express.static(path.resolve(path.join(__dirname, "frontend/build"))))
 
+app.use('/auth', authRoutes);
 
 app.use(function (req, res, next) {
 

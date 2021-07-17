@@ -1,6 +1,6 @@
 var url = window.location.href.split(":");
 if (url[0] === "https") {
-    url = 'https://milage.herokuapp.com'
+    url = 'https://mileage-apps.herokuapp.com'
 }
 else {
     url = "http://localhost:5000"
