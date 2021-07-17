@@ -93,7 +93,7 @@ function Login() {
 
                 </form>
                 <br />
-                {'===>' + JSON.stringify(globalState)}
+                {/* {'===>' + JSON.stringify(globalState)} */}
             </div>
 
         </div>
